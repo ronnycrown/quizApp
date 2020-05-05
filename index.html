@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bible Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="quizContainer">
+      <div class="title">
+        <h3 class="heading">Bible Quiz</h3>
+        <h4 class="heading2">
+          Question <span class="questionNumValue"></span> of
+          <span class="total"></span>
+        </h4>
+      </div>
+      <div class="question"></div>
+      <div class="options">
+        <div id="one" class="first options" onclick="verify(this)"></div>
+        <div id="two" class="second options" onclick="verify(this)"></div>
+        <div id="three" class="third options" onclick="verify(this)"></div>
+        <div id="four" class="fourth options" onclick="verify(this)"></div>
+      </div>
+      <div class="button">
+        <button type="button" class="btn" id="next" disabled>Next</button>
+      </div>
+      <div class="score" id="counter">
+        Your Score: <span id="scoreValue"> 0</span>
+      </div>
+    </div>
+    <script src="question.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
